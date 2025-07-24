@@ -28,6 +28,9 @@ function App() {
   
   useEffect(() => {
     console.log("컴포넌트 마운트");
+    return () => {
+      console.log("app에서 컴포넌트 언마운트 감지");
+    }
   }, []);
 
   useEffect(() => {
